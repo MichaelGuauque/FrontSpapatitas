@@ -10,8 +10,6 @@ main{
 .panel-informacion-informe{
     display: flex;
     flex-direction: column;
-    width: 1338px;
-    height: 167px;
     background-color: #FFFAF9;
     align-items: center;
     justify-content: center;
@@ -20,11 +18,11 @@ main{
 }
 
 .titulo-informe{
-    font-size: 32px;
+    font-size: 2rem;
 }
 
 .parrafo-informe{
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .descarga-informe{
@@ -39,24 +37,22 @@ main{
 .descarga-informe-diario, .descarga-informe-mensual{
     display: flex;
     flex-direction: column;
-    width: 694px;
-    height: 689px;
     background-color: #4F4F4F;
     color: #FFFAF9;
     border-radius: 10px;
     align-items: center;
     justify-content: center;
-    gap: 4%;
+    gap: 6%;
     padding: 3%;
 }
 
 .titulo-informe-descarga{
-    font-size: 48px;
+    font-size: 3rem;
     color: #FFFAF9;
 }
 
 .parrafo-informe-descarga{
-    font-size: 28px;
+    font-size: 1.7rem;
 }
 
 .boton-descargar{
@@ -67,6 +63,6 @@ main{
     border: #FFFAF9 solid 10px;
     border-radius: 20px;
     color: #FFFAF9;
-    font-size: 32px;
+    font-size: 2rem;
     font-family: "Rubik", sans-serif;
 }
