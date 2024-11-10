@@ -73,6 +73,11 @@ main{
     height: 25.83px;
 }
 
+.icons-men{
+    width: 32px;
+    height: 32px;
+}
+
 .menu-link{
     display: flex;
     width: 290px;
@@ -115,6 +120,14 @@ main{
 }
 
 .crear-producto{
+    padding-top: 15px;
+    padding-left: 1.3rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+
+}
+
+.crear-promo{
     padding-top: 15px;
     padding-left: 1.3rem;
     padding-right: 2rem;
@@ -312,13 +325,30 @@ h3::after {
     align-items: baseline; /* Alinea los elementos al piso del texto */
   }
 
-
+  #pequeñ::after {
+    content: "";
+    display: inline-block;
+    width: 640px; /* Longitud de la línea */
+    height: 3px; /* Grosor de la línea */
+    background-color: #121212; /* Color de la línea */
+    opacity: 0.4;
+    margin-left: 10px; /* Espacio entre el título y la línea */
+    align-items: baseline; /* Alinea los elementos al piso del texto */
+  }
 
 .tabla{
     padding: 2rem;
     background-color: #FFFAF9;
     border-radius: 10px;
 }
+
+.tablaPromo{
+    margin-top: 22px;
+    padding: 2rem;
+    background-color: #FFFAF9;
+    border-radius: 10px;
+}
+
 
 .tabla-encabezado{
     display: flex;
@@ -496,4 +526,9 @@ h5{
     font-weight: 400;
     line-height: 25px; /* 156.25% */
     opacity: 0.6;
+}
+
+#promocionesDiv{
+    padding-top: 15px;
+    padding-left: 20px;
 }
