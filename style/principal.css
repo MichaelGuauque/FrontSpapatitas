@@ -10,12 +10,12 @@ body{
     display: flex;
     font-family: "Poppins", sans-serif;
     background-color: #E0E0E0;
-    gap: 20px;
+    gap: 1.25rem;
 }
 
 main{
     padding-left: 18%;
-    margin-right: 27px;
+    margin-right: 1.688rem;
 }
 
 .left-var{
@@ -35,20 +35,20 @@ main{
 
 .contenedor-logo{
     display: flex;
-    width: 283px;
-    height: 99px;
+    width: 17.688rem;
+    height: 6.188rem;
     background-color: #F2B243;
     align-items: center;
     justify-content: center;
     border-radius: 10px;
     padding: 3%;
-    margin-top: 28px;
+    margin-top: 1.75rem;
 
 }
 
 .logo{
-    width: 247px;
-    height: 72px;
+    width: 15.438rem;
+    height: 4.5rem;
 
 }
 /**
@@ -67,26 +67,26 @@ main{
 }
 
 .icons-menu{
-    width: 29px;
-    height: 25.83px;
+    width: 1.813rem;
+    height: 1.614rem;
 }
 
 .icons-men{
-    width: 32px;
-    height: 32px;
+    width: 2rem;
+    height: 2rem;
 }
 
 .menu-link{
     display: flex;
-    width: 290px;
-    height: 60px;
+    width: 18.125rem;
+    height: 3.75rem;
     text-decoration: none;
     color: rgba(0, 0, 0, 0.687);
     border-radius: 10px;
     justify-content: left;
     align-items: center;
-    gap: 15px;
-    padding-left: 8px;
+    gap: 0.938rem;
+    padding-left: 0.5rem;
 }
 
 .menu-link:hover{
@@ -96,14 +96,14 @@ main{
 .right-content{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 1.25rem;
 
 }
 
 .custom-line {
     border: none; /* Elimina el borde predeterminado */
-    width: 280px;
-    height: 3px;
+    width: 17.5rem;
+    height: 0.188rem;
     opacity: 0.1;
     background-color: #010101; /* Color de la línea */
     margin: 2px 0; /* Espacio alrededor de la línea */
@@ -113,12 +113,12 @@ main{
     display: flex;
     justify-content: flex-end;
     padding: 1%;
-    gap: 5px;
+    gap: 0.313rem;
     
 }
 
 .crear-producto{
-    padding-top: 15px;
+    padding-top: 0.938rem;
     padding-left: 1.3rem;
     padding-right: 2rem;
     padding-bottom: 2rem;
@@ -126,7 +126,7 @@ main{
 }
 
 .crear-promo{
-    padding-top: 15px;
+    padding-top: 0.938rem;
     padding-left: 1.3rem;
     padding-right: 2rem;
     padding-bottom: 2rem;
@@ -141,10 +141,10 @@ main{
 .right-content-info-izquierda{
     display: flex;
     flex-direction: column;
-    width: 768px;
-    height: 883px;
+    width: 48rem;
+    height: 55.188rem;
     background-color: #FFFAF9;
-    border-radius: 30px;
+    border-radius: 1.875rem;
     align-items: center;
     /*padding-left: 10px;*/
     gap: 2%;
@@ -162,16 +162,16 @@ p{
 }
 
 #tituloPrincipal{
-    margin-top: 50px;
-    margin-left: 48px;
-    margin-right: 28px;
+    margin-top: 3.125rem;
+    margin-left: 3rem;
+    margin-right: 1.75rem;
     
 
 }
 
 #texto{
-    margin-left: 48px;
-    margin-right: 50px;
+    margin-left: 3rem;
+    margin-right: 3.125rem;
     font-size: 2rem;
     font-weight: 400;
     opacity: 0.7;
@@ -180,14 +180,14 @@ p{
 }
 
 #texto2{
-    margin-bottom: 50px;
+    margin-bottom: 3.125rem;
 }
 
 a{
     font-family: Rubik;
     font-weight: 600;
     opacity: 0.8;
-    margin-left: 20px;
+    margin-left: 1.25rem;
 }
 
 .botones-direccionamiento{
@@ -201,10 +201,10 @@ a{
     color: black;
     font-size: 1.5rem;
     display: flex;
-    width: 243px;
-    height: 81px;
-    border-radius: 20px;
-    border: 8px solid black;
+    width: 15.188rem;
+    height: 5.063rem;
+    border-radius: 1.25rem;
+    border: 0.5rem solid black;
     align-items: center;
     justify-content: center;
     text-decoration: none;
@@ -216,12 +216,12 @@ a{
 }
 
 .boton-registrar, .boton-iniciar, .boton-carrito{
-    width: 163px;
-    height: 48px;
+    width: 10.188rem;
+    height: 3rem;
     font-size: 1.25rem;
     display: flex;
     text-decoration: none;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     align-items: center;
     justify-content: center;
     color: #FFFAF9;
@@ -244,13 +244,13 @@ a{
 }
 
 .img-perro{
-    width: 595px;
-    height: 883px;
+    width: 37.188rem;
+    height: 55.188rem;
 }
 
 .imgLogo{
-    width: 314px;
-    height: 257px;
+    width: 19.625rem;
+    height: 16.063rem;
     opacity: 0.8;
 }
 
@@ -259,7 +259,7 @@ a{
     align-items: center;
     justify-items: center;
     background-color: #FFFAF9;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     margin-top: 3%;
     padding: 2%;
     opacity: 0.8;
@@ -276,7 +276,7 @@ h2{
 }
 
 #tablita{
-    margin-top: 30px;
+    margin-top: 1.875rem;
 }
 
 th{
@@ -294,7 +294,7 @@ th{
 
 h3{
     font-family: Inter;
-    margin-left: -15px;
+    margin-left: -0.938rem;
     font-weight: 700;
     color: #515151;
 }
@@ -302,47 +302,47 @@ h3{
 h3::after {
     content: "";
     display: inline-block;
-    width: 910px; /* Longitud de la línea */
-    height: 2.5px; /* Grosor de la línea */
+    width: 56.875rem; /* Longitud de la línea */
+    height: 0.156rem; /* Grosor de la línea */
     background-color: #121212; /* Color de la línea */
     opacity: 0.4;
-    margin-left: 10px; /* Espacio entre el título y la línea */
+    margin-left: 0.625rem; /* Espacio entre el título y la línea */
     align-items: baseline; /* Alinea los elementos al piso del texto */
   }
 
 #pequeño::after {
     content: "";
     display: inline-block;
-    width: 660px; /* Longitud de la línea */
-    height: 2.5px; /* Grosor de la línea */
+    width: 41.25rem; /* Longitud de la línea */
+    height: 0.156rem; /* Grosor de la línea */
     background-color: #121212; /* Color de la línea */
     opacity: 0.4;
-    margin-left: 10px; /* Espacio entre el título y la línea */
+    margin-left: 0.625rem; /* Espacio entre el título y la línea */
     align-items: baseline; /* Alinea los elementos al piso del texto */
   }
 
   #pequeñ::after {
     content: "";
     display: inline-block;
-    width: 640px; /* Longitud de la línea */
-    height: 3px; /* Grosor de la línea */
+    width: 40rem; /* Longitud de la línea */
+    height: 0.188rem; /* Grosor de la línea */
     background-color: #121212; /* Color de la línea */
     opacity: 0.4;
-    margin-left: 10px; /* Espacio entre el título y la línea */
+    margin-left: 0.625rem; /* Espacio entre el título y la línea */
     align-items: baseline; /* Alinea los elementos al piso del texto */
   }
 
 .tabla{
     padding: 2rem;
     background-color: #FFFAF9;
-    border-radius: 10px;
+    border-radius: 0.625rem;
 }
 
 .tablaPromo{
-    margin-top: 22px;
+    margin-top: 1.375rem;
     padding: 2rem;
     background-color: #FFFAF9;
-    border-radius: 10px;
+    border-radius: 0.625rem;
 }
 
 
@@ -354,18 +354,18 @@ h3::after {
 
 .buscador{
     background-color: #E0E0E0;
-    width: 379px;
-    height: 52px;
-    border-radius: 10px;
+    width: 23.688rem;
+    height: 3.25rem;
+    border-radius: 0.625rem;
     border-style: none;
     padding-left: 3%;
 }
 
 .boton-buscar{
-    height: 52px;
-    width: 52px;
+    height: 3.25rem;
+    width: 3.25rem;
     border-style: none;
-    border-radius: 10px;
+    border-radius: 0.625rem;
 }
 
 h3{
@@ -375,27 +375,27 @@ h3{
 
 .right-content-info-derecha{
     background-color: #FFFAF9;
-    border-radius: 30px;
-    height: 883px;
+    border-radius: 1.875rem;
+    height: 55.188rem;
 }
 
 
 footer{
-    margin-top: 25px;
-    padding-left: 75px;
-    padding-top: 55px;
+    margin-top: 1.563rem;
+    padding-left: 4.688rem;
+    padding-top: 3.438rem;
     
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 0.938rem 0.938rem 0px 0px;
     background: #4F4F4F;
-    height: 541px;
+    height: 33.813rem;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    gap: 8px;
+    gap: 0.5rem;
 }
 
 #fote{
-    padding-top: 60px;
+    padding-top: 3.75rem;
 
     color: #FFF;
     text-align: center;
@@ -403,15 +403,15 @@ footer{
     font-size: 0.875rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 25px; /* 178.571% */
+    line-height: 1.563rem; /* 178.571% */
     opacity: 0.6;
     
 }
 
 .iconosFooter{
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: 0.313rem;
     
 }
 
@@ -419,7 +419,7 @@ footer{
     color: #FFF;
     text-align: center;
     font-family: Rubik;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -427,12 +427,12 @@ footer{
 }
 
 #eslo{
-    width: 349px;
+    width: 21.813rem;
 }
 
 .contene{
-    width: 386px;
-    height: 120px;
+    width: 24.125rem;
+    height: 7.5rem;
 }
     
 .div1 {
@@ -441,7 +441,7 @@ footer{
 }
 
 .div2 {
-    margin-left: 60px;
+    margin-left: 3.75rem;
     grid-row: span 2 / span 2;
     grid-column-start: 3;
     
@@ -454,8 +454,8 @@ footer{
 }
 
 .div5 {
-    margin-top: 100px;
-    margin-left: -18px;
+    margin-top: 6.25rem;
+    margin-left: -1.125rem;
     grid-column: span 2 / span 2;
     grid-row: span 2 / span 2;
     grid-row-start: 3;
@@ -463,8 +463,8 @@ footer{
 }
 
 .div6 {
-    margin-left: 60px;
-    margin-top: 20px;
+    margin-left: 3.75rem;
+    margin-top: 1.25rem;
     grid-row: span 2 / span 2;
     grid-column-start: 3;
     grid-row-start: 3;
@@ -500,18 +500,18 @@ h5{
 
 .roww{
     display: flex;
-    gap: 2px;
-    height: 340px;
-    width: 340px;
+    gap: 0.125rem;
+    height: 21.25rem;
+    width: 21.25rem;
 }
 
 .columna2 .columna1{
     flex: 1;
     list-style-type: circle ;
-    margin-left: 15px;
+    margin-left: 0.938rem;
 }
 .columna2{
-    padding-left: 20px;
+    padding-left: 1.25rem;
 }
 
 .naveg{
@@ -520,11 +520,11 @@ h5{
     font-size: 1rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 25px; /* 156.25% */
+    line-height: 1.563rem; /* 156.25% */
     opacity: 0.6;
 }
 
 #promocionesDiv{
-    padding-top: 15px;
-    padding-left: 20px;
+    padding-top: 0.938rem;
+    padding-left: 1.25rem;
 }
