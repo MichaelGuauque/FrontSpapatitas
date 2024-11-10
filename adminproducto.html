@@ -13,33 +13,36 @@
         <div class="contenedor-logo">
             <img clas="logo"src="./img/Blanco Largo 1.png">
         </div>
-        <div class="line">
-            <img src="./img/Line.png">
+        <div>
+            
+            <hr class="custom-line">
         </div>
         <div class="opciones">
-            <a class="menu-link" href="login.html"> <img class="icons-menu" src="./img/Home.png"> Inicio</a>
-            <a class="menu-link" href="#"> <img class="icons-menu" src="./img/Shopping bag.png"> Productos</a>
-            <a class="menu-link" href="#"> <img class="icons-menu" src="./img/Scissors.png"> Servicios</a>
-            <a class="menu-link" href="#"> <img class="icons-menu" src="./img/Calendar.png"> Citas</a>
-            <a class="menu-link" href="#"> <img class="icons-menu" src="./img/Tag.png"> Promociones</a>
-            <a class="menu-link" href="#"> <img class="icons-menu" src="./img/🦆 icon _pet_.png">  Mis Mascotas</a>
+            <a class="menu-link" href="index.html"> <img class="icons-menu" src="./img/Home.png"> Inicio</a>
+            <a class="menu-link" href="vistaProductos.html"> <img class="icons-menu" src="./img/Shopping bag.png"> Productos</a>
+            <a class="menu-link" href="vistaServicios.html"> <img class="icons-menu" src="./img/Scissors.png"> Servicios</a>
+            <a class="menu-link" href="vistaCitas.html"> <img class="icons-menu" src="./img/Calendar.png"> Citas</a>
+            <a class="menu-link" href="vistaPromociones.html"> <img class="icons-menu" src="./img/Tag.png"> Promociones</a>
+            <a class="menu-link" href="vistaMascotas.html"> <img class="icons-menu" src="./img/Users.png">  Clientes</a>
+            <a class="menu-link" href="vistaMascotas.html"> <img class="icons-menu" src="./img/Clipboard.png">  Informes</a>
         </div>
-        <div class="line">
-            <img src="./img/Line.png">
+        <div >
+            
+            <hr class="custom-line">
         </div>
         <div class="opciones">
-            <a class="menu-link" href="#"> <img class="icons-menu" src="./img/Archive.png"> PQRS</a>
-            <a class="menu-link" href="#"> <img class="icons-menu" src="./img/Clipboard.png"> Quienes Somos</a>
-            <a class="menu-link" href="#"> <img class="icons-menu" src="./img/Info.png"> Ayuda</a>
+            <a class="menu-link" href="vistaAyuda.html"> <img class="icons-menu" src="./img/Info.png"> Gestionar Info</a>
         </div>
-        <div class="line">
-            <img src="./img/Line.png">
+        <div>
+            
+            <hr class="custom-line">
         </div>
         <div class="opciones">
             <a class="menu-link" href="#"> <img class="icons-menu" src="./img/Settings.png"> Configuración</a>
         </div>
     </div>
 
+    <main>
     <div class="right-content">
         <div class="panel-informacion">
             <h2>Administra el inventario de productos de Spa Patitas: consulta productos disponibles, 
@@ -47,9 +50,9 @@
         </div>
 
         <div class="crear-producto" style="background-color: #FFFAF9; border-radius: 10px;">
-            <div>
+            
                 <h3>Información del Producto</h3>
-            </div>
+            
             <div class="container mt-5" style="background-color: #FFFAF9;">
                 <form>
                     <div class="row">
@@ -107,7 +110,7 @@
             
                     <div class="row">
                         <!-- Botones de Enviar y Cancelar -->
-                        <div class="col-md-4 mb-3" style="display: flex;">
+                        <div id="botones" class="col-md-4 mb-3" style="display: flex;">
                             <button type="submit" class="btn btn-primary w-50 me-2" style="background-color: #F2B243; border-style: none;">Guardar</button>
                             <button type="button" class="btn btn-secondary w-50" onclick="window.location.href='/'">Cancelar</button>
                         </div>
@@ -118,7 +121,7 @@
 
         <div class="tabla">
             <div class="tabla-encabezado">
-                <h3>Productos</h3>
+                <h3 id="pequeño">Productos</h3>
                 <div>
                     <form>
                         <input class="buscador" type="number" placeholder="Codigo del producto.">
@@ -126,7 +129,7 @@
                     </form>
                 </div>
             </div>
-            <table class="table table-striped table-hover">
+            <table id="tablita" class="table table-striped table-hover">
                 <thead>
                     <tr>
                       <th scope="col">Nombre del Producto</th>
@@ -180,6 +183,79 @@
         </div>
     </div>
 
+    <!-- Footer -->
+<footer >
+    
+        <div class="div1"> <img class="imgLogo" src="./img/Blanco Cuadrado.png"> </div>
+
+        <div class="div2">    
+            <div class="contene">
+                <h5>Información de contacto</h5>
+                
+                  <p id="informa"><img class="iconosFooter" src="./img/Map pin.png">Calle Ejemplo 123, Ciudad, País</p>
+                  <p id="informa"><img class="iconosFooter" src="./img/Phone call.png">+123 456 7890</p>
+                  <p id="informa"><img class="iconosFooter" src="./img/Mail.png">info@spapatitas.com</p>
+                  <p id="informa"><img class="iconosFooter" src="./img/Clock.png">Horario: Lunes a Sábado, 9:00 AM - 6:00 PM</p>
+            </div>     
+        </div>
+
+        <div class="div4">
+
+            <div class="col-md-4">
+                <h5>Navegación</h5>
+                <div class="roww">
+                  <div class="columna1">
+                    <ul class="list-unstyled">
+                      <li class="naveg">Inicio</li>
+                      <li class="naveg">Productos</li>
+                      <li class="naveg">Servicios</li>
+                      <li class="naveg">Citas</li>
+                    </ul>
+                  </div>
+                  <div class="columna2">
+                    <ul class="list-unstyled">
+                      <li class="naveg">Sobre Nosotros</li>
+                      <li class="naveg">Términos y Condiciones</li>
+                      <li class="naveg">PQRS</li>
+                      <li class="naveg">Ayuda</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+        </div>
+
+        <div class="div5"> 
+            <section id="eslo">
+                <p id="eslogan">Nos apasiona el cuidado de tu mascota. Gracias por confiar en Spa Patitas.</p> 
+            </section>
+        </div>
+
+        <div class="div6">
+
+
+            <div class="contene">
+                <h5>Información de contacto</h5>
+                
+                  <p id="informa"><img class="iconosFooter" src="./img/Instagram.png">Instagram</p>
+                  <p id="informa"><img class="iconosFooter" src="./img/Facebook.png">Facebook</p>
+                  <p id="informa"><img class="iconosFooter" src="./img/🦆 icon _x letter_.png">X</p>
+                  <p id="informa"><img class="iconosFooter" src="./img/🦆 icon _tiktok_.png">TikTok</p>
+            </div>
+
+        </div>
+
+        <div class="div7"><p id="fote">&copy;2024 Spa Patitas. Todos los derechos reservados. El contenido y las imágenes son propiedad de Spa Patitas. Prohibida su reproducción sin autorización.</p></div>
+        
+
+    
+    <!-- -->
+</footer>
+
+</main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+
 </body>
 </html>
