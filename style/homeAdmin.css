@@ -22,9 +22,9 @@
 }
 
 .boton-cliente, .boton-promocion{
+    display: flex;
     color: black;
     font-size: 1.5rem;
-    display: flex;
     width: 15.188rem;
     height: 5.063rem;
     border-radius: 1.25rem;
