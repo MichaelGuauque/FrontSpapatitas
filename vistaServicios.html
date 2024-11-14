@@ -47,61 +47,62 @@
     <main>
     <div class="right-content">
         <div class="panel-informacion">
-            <h2>Administra las promociones y descuentos de Spa Patitas: consulta las promociones activas, añade nuevas ofertas y modifica las promociones existentes.</h2>
+            <h2>Administra la lista de servicios ofrecidos en Spa Patitas: consulta servicios disponibles, añade nuevos servicios y modifica la información de los servicios existentes.</h2>
         </div>
 
-        <div class="crear-promo" style="background-color: #FFFAF9; border-radius: 10px;">
+        <div class="crear-producto" style="background-color: #FFFAF9; border-radius: 10px;">
             
-                <h3>Información Promocion</h3>
+                <h3>Información del Proveedor</h3>
             
-            <!-- Primera Fila: ID de Promoción, ID de Producto, ID de Servicio -->
-        <div id="promocionesDiv">
-            <div class="row mb-3">
-            
-            <div class="col-md-4">
-                <label for="idProducto" class="form-label">ID del Producto</label>
-                <input type="number" class="form-control" id="idProducto" placeholder="Ingresa el ID del producto" required>
-            </div>
-            <div class="col-md-4">
-                <label for="idServicio" class="form-label">ID del Servicio</label>
-                <input type="number" class="form-control" id="idServicio" placeholder="Ingresa el ID del servicio" required>
-            </div>
+            <div class="container mt-5" style="background-color: #FFFAF9;">
+                <form>
+         <!-- Primera fila: Nombre del servicio, Precio al público, Coste interno -->
+    <div class="row mb-3">
+        <div class="col-md-4">
+            <label for="nombreServicio" class="form-label">Nombre del Servicio</label>
+            <input type="text" class="form-control" id="nombreServicio" placeholder="Ingrese el nombre del servicio">
         </div>
-
-        <!-- Segunda Fila: Valor del Descuento y Estado -->
-        <div class="row mb-3">
-            <div class="col-md-6">
-                <label for="valorDescuento" class="form-label">Valor del Descuento</label>
-                <input type="number" step="0.01" class="form-control" id="valorDescuento" placeholder="Ingresa el descuento (ej: 0.3)" required>
-            </div>
-            <div class="col-md-6">
-                <label for="estado" class="form-label">Estado de la Promoción</label>
-                <select class="form-select" id="estado" required>
-                    <option value="" selected disabled>Selecciona el estado</option>
-                    <option value="habilitado">Habilitado</option>
-                    <option value="deshabilitado">Deshabilitado</option>
-                </select>
-            </div>
+        <div class="col-md-4">
+            <label for="precioPublico" class="form-label">Precio al Público</label>
+            <input type="number" class="form-control" id="precioPublico" placeholder="Ingrese el precio al público">
         </div>
-            
-                    <div class="row">
-                        <!-- Botones de Enviar y Cancelar -->
-                        <div id="botones" class="col-md-4 mb-3" style="display: flex;">
-                            <button type="submit" class="btn btn-primary w-50 me-2" style="background-color: #F2B243; border-style: none;">Guardar</button>
-                            <button type="button" class="btn btn-secondary w-50" onclick="window.location.href='/'">Cancelar</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
+        <div class="col-md-4">
+            <label for="costeInterno" class="form-label">Coste Interno</label>
+            <input type="number" class="form-control" id="costeInterno" placeholder="Ingrese el coste interno">
         </div>
     </div>
 
-        <div class="tablaPromo">
+    <!-- Segunda fila: Información del servicio, Estado -->
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <label for="informacionServicio" class="form-label">Información del Servicio</label>
+            <textarea class="form-control" id="modificacionTerminos" rows="5" placeholder="Ingrese información sobre modificación de los términos"></textarea>
+        </div>
+        <div class="col-md-6">
+            <label for="estadoServicio" class="form-label">Estado</label>
+            <select class="form-select" id="estadoServicio">
+                <option value="habilitado">HABILITADO</option>
+                <option value="deshabilitado">DESHABILITADO</option>
+            </select>
+        </div>
+    </div>
+    <div class="row">
+        <!-- Botones de Enviar y Cancelar -->
+        <div id="botones" class="col-md-4 mb-3" style="display: flex;">
+            <button type="submit" class="btn btn-primary w-50 me-2" style="background-color: #F2B243; border-style: none;">Guardar</button>
+            <button type="button" class="btn btn-secondary w-50" onclick="window.location.href='/'">Cancelar</button>
+        </div>
+    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="tabla">
             <div class="tabla-encabezado">
-                <h3 id="pequeñ">Promociones</h3>
+                <h3 id="pequeño2">Servicios Disponibles</h3>
                 <div>
                     <form>
-                        <input class="buscador" type="number" placeholder="ID Promocion.">
+                        <input class="buscador" type="number" placeholder="Codigo del Servicio.">
                         <button class="boton-buscar" type="submit"><img src="./img/Search.png"></button>
                     </form>
                 </div>
@@ -109,20 +110,19 @@
             <table id="tablita" class="table table-striped table-hover">
                 <thead>
                     <tr>
-                      <th scope="col">Codigo Promocion</th>
-                      <th scope="col">Descuento</th>
-                      <th scope="col">Cod Producto</th>
-                      <th scope="col">Cod Servicio</th>
+                      <th scope="col">Nombre del Servicio</th>
+                      <th scope="col">$ Publico</th>
+                      <th scope="col">Codigo</th>
                       <th scope="col">Estado</th>
                       <th scope="col">Acción</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <th scope="row">32142</th>
-                      <td>0.2</td>
-                      <td>NULL</td>
-                      <td>2468468</td>
+                      <th scope="row">bañitoPerron</th>
+                      <td>768456</td>
+                      <td>3168557869</td>
+
                       <td>HABILITADO</td>
                       <td style="display: flex; flex-direction: column; gap: 7px;">
                         <button style="border-radius: 10px; background-color: #F1F1F1;">Modificar</button>
@@ -130,10 +130,10 @@
                     </td>
                     </tr>
                     <tr>
-                      <th scope="row">31243</th>
-                      <td>0.3</td>
-                      <td>526564</td>
-                      <td>NULL</td>
+                      <th scope="row">bañitoPerron</th>
+                      <td>432643</td>
+                      <td>3167834567</td>
+
                       <td>HABILITADO</td>
                       <td style="display: flex; flex-direction: column; gap: 7px;">
                         <button style="border-radius: 10px; background-color: #F1F1F1;">Modificar</button>
@@ -141,10 +141,9 @@
                     </td>
                     </tr>
                     <tr>
-                      <th scope="row">43123</th>
-                      <td>0.15</td>
-                      <td>648564</td>
-                      <td>NULL</td>
+                      <th scope="row">bañitoPerron</th>
+                      <td>312413</td>
+                      <td>3167894762</td>
                       <td>DESHABILITADO</td>
                       <td style="display: flex; flex-direction: column; gap: 7px;">
                         <button style="border-radius: 10px; background-color: #F1F1F1;">Modificar</button>
