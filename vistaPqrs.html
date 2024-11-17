@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SpaPatitas | Administrar Servicios</title>
+    <title>SpaPatitas | Pqrs</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="icon" type="image/png" href="./img/Logo solo-02-02.png">
     <link rel="stylesheet" href="./style/principal.css">
@@ -46,114 +46,54 @@
 
     <main>
     <div class="right-content">
-        <div class="panel-informacion">
-            <h2>Administra la lista de servicios ofrecidos en Spa Patitas: consulta servicios disponibles, añade nuevos servicios y modifica la información de los servicios existentes.</h2>
+        <div class="panel-informacion" >
+            <h3 >PQRS - Peticiones, Quejas, Reclamos y Sugerencias</h3>
+            <h2 >En Spa Patitas, nos interesa conocer tu opinión para mejorar nuestros servicios y ofrecer una experiencia más satisfactoria para ti y tu mascota. Si tienes alguna petición, queja, reclamo o sugerencia, por favor, no dudes en contactarnos.</h2>
         </div>
 
-        <div class="crear-producto" style="background-color: #FFFAF9; border-radius: 10px;">
+        <div class="crear-promo" style="background-color: #FFFAF9; border-radius: 10px;">
             
-                <h3>Información del Proveedor</h3>
+                <h3 id="titulosDiv">Correo de Contacto para PQRS:</h3>
             
-            <div class="container mt-5" style="background-color: #FFFAF9;">
-                <form>
-         <!-- Primera fila: Nombre del servicio, Precio al público, Coste interno -->
-    <div class="row mb-3">
-        <div class="col-md-4">
-            <label for="nombreServicio" class="form-label">Nombre del Servicio</label>
-            <input type="text" class="form-control" id="nombreServicio" placeholder="Ingrese el nombre del servicio">
-        </div>
-        <div class="col-md-4">
-            <label for="precioPublico" class="form-label">Precio al Público</label>
-            <input type="number" class="form-control" id="precioPublico" placeholder="Ingrese el precio al público">
-        </div>
-        <div class="col-md-4">
-            <label for="costeInterno" class="form-label">Coste Interno</label>
-            <input type="number" class="form-control" id="costeInterno" placeholder="Ingrese el coste interno">
+                <p id="mail"><img class="iconosFooter" src="./img/Mail.png"><strong>info@spapatitas.com</strong></p>
+
+                <p id="contacto" style="margin-left: 15px;">Por favor, envía un correo a la dirección anterior con la siguiente información:</p>
+                                    <ul>
+                                        <li id="contacto">Asunto del correo: Indica si se trata de una "Petición", "Queja", "Reclamo" o "Sugerencia".</li>
+                                        <li id="contacto">Nombre completo.</li>
+                                        <li id="contacto">Descripción detallada de tu solicitud.</li>
+                                        <li id="contacto">Número de pedido o cita (si aplica).</li>
+                                        <li id="contacto">Teléfono de contacto (opcional).</li>
+                                                                            
+                                    </ul>
+                                    <p id="contacto" style="margin-left: 15px; margin-top: -10px;">Nos comprometemos a responderte en un plazo de 3 a 5 días hábiles.</p>  
+            
         </div>
     </div>
 
-    <!-- Segunda fila: Información del servicio, Estado -->
-    <div class="row mb-3">
-        <div class="col-md-6">
-            <label for="informacionServicio" class="form-label">Información del Servicio</label>
-            <textarea class="form-control" id="modificacionTerminos" rows="5" placeholder="Ingrese información sobre modificación de los términos"></textarea>
-        </div>
-        <div class="col-md-6">
-            <label for="estadoServicio" class="form-label">Estado</label>
-            <select class="form-select" id="estadoServicio">
-                <option value="habilitado">HABILITADO</option>
-                <option value="deshabilitado">DESHABILITADO</option>
-            </select>
+    <div class="right-content">
+        
+
+        <div class="crear-promo" style="background-color: #FFFAF9; border-radius: 10px; margin-top: 1.2%;">
+            
+                <h3 id="titulosDiv2">Información de Contacto Adicional</h3>
+                
+                <p id="contacto" style="margin-left: 15px;">Si necesitas asistencia inmediata, también puedes llamarnos o enviarnos un mensaje de WhatsApp:</p>
+                                    <ul>
+                                        <li id="contacto">Teléfono de Atención al Cliente: +1 (234) 567-890</li>
+                                        <li id="contacto">WhatsApp: +1 (234) 567-890</li>
+                                        <li id="contacto">Horario de Atención: Lunes a Viernes de 9:00 AM a 6:00 PM</li>                                      
+                                    </ul>
+                
+                
         </div>
     </div>
-    <div class="row">
-        <!-- Botones de Enviar y Cancelar -->
-        <div id="botones" class="col-md-4 mb-3" style="display: flex;">
-            <button type="submit" class="btn btn-primary w-50 me-2" style="background-color: #F2B243; border-style: none;">Guardar</button>
-            <button type="button" class="btn btn-secondary w-50" onclick="window.location.href='/'">Cancelar</button>
-        </div>
-    </div>
-                </form>
-            </div>
-        </div>
+    
 
-        <div class="tabla">
-            <div class="tabla-encabezado">
-                <h3 id="pequeño2">Servicios Disponibles</h3>
-                <div>
-                    <form>
-                        <input class="buscador" type="number" placeholder="Codigo del Servicio.">
-                        <button class="boton-buscar" type="submit"><img src="./img/Search.png"></button>
-                    </form>
-                </div>
-            </div>
-            <table id="tablita" class="table table-striped table-hover">
-                <thead>
-                    <tr>
-                      <th scope="col">Nombre del Servicio</th>
-                      <th scope="col">$ Publico</th>
-                      <th scope="col">Codigo</th>
-                      <th scope="col">Estado</th>
-                      <th scope="col">Acción</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">bañitoPerron</th>
-                      <td>768456</td>
-                      <td>3168557869</td>
+    
 
-                      <td>HABILITADO</td>
-                      <td style="display: flex; flex-direction: column; gap: 7px;">
-                        <button style="border-radius: 10px; background-color: #F1F1F1;">Modificar</button>
-                        <button style="border-radius: 10px; background-color: #4F4F4F; color: #F1F1F1;">Habilitar/Deshabilitar</button>
-                    </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">bañitoPerron</th>
-                      <td>432643</td>
-                      <td>3167834567</td>
-
-                      <td>HABILITADO</td>
-                      <td style="display: flex; flex-direction: column; gap: 7px;">
-                        <button style="border-radius: 10px; background-color: #F1F1F1;">Modificar</button>
-                        <button style="border-radius: 10px; background-color: #4F4F4F; color: #F1F1F1;">Habilitar/Deshabilitar</button>
-                    </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">bañitoPerron</th>
-                      <td>312413</td>
-                      <td>3167894762</td>
-                      <td>DESHABILITADO</td>
-                      <td style="display: flex; flex-direction: column; gap: 7px;">
-                        <button style="border-radius: 10px; background-color: #F1F1F1;">Modificar</button>
-                        <button style="border-radius: 10px; background-color: #4F4F4F; color: #F1F1F1;">Habilitar/Deshabilitar</button>
-                    </td>
-                    </tr>
-                  </tbody>
-            </table>
-        </div>
-    </div>
+    
+    
 
     <!-- Footer -->
 <footer >

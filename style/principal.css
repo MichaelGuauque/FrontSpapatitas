@@ -311,6 +311,17 @@ h3{
     align-items: baseline; /* Alinea los elementos al piso del texto */
   }
 
+  #titulosDiv2::after {
+    content: "";
+    display: inline-block;
+    width: 54.875rem; /* Longitud de la línea */
+    height: 0.2rem; /* Grosor de la línea */
+    background-color: #121212; /* Color de la línea */
+    opacity: 0.4;
+    margin-left: 0.625rem; /* Espacio entre el título y la línea */
+    align-items: baseline; /* Alinea los elementos al piso del texto */
+  }
+
 #pequeño::after {
     content: "";
     display: inline-block;
@@ -539,4 +550,83 @@ h5{
 #promocionesDiv{
     padding-top: 0.938rem;
     padding-left: 1.25rem;
+}
+
+#tituloOscuro{
+    width: 1267px;
+    color: #FFFAF9;
+    text-align: center;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+#panelOscuro{
+    border-radius: 10px;
+    background: #4F4F4F;
+}
+
+#contacto{
+    color: #4F4F4F;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#paginasAcordeon{
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+/* Color del texto cuando el acordeón está colapsado */
+.accordion-button.collapsed h5#paginasAcordeon {
+    color: #515151 !important;
+}
+
+/* Color del texto cuando el acordeón está expandido */
+.accordion-button:not(.collapsed) h5#paginasAcordeon {
+    color: #ffffff !important;
+}
+
+/* Cambia el color del botón del acordeón cuando está expandido */
+.accordion-button:not(.collapsed) {
+    background-color: #4F4F4F; /* Cambia el color de fondo aquí */
+}
+
+/* Cambia el color del borde cuando está expandido */
+.accordion-button:not(.collapsed)::after {
+    border-color: #ffffff; /* Cambia el color del icono de flecha */
+}
+
+/* Estilo para las pestañas cuando están colapsadas (cerradas) */
+.accordion-button.collapsed {
+    background-color: #FFFAF9; /* Color de fondo cuando está cerrado */
+    color: #c4c4c4; /* Color del texto cuando está cerrado */
+    border-color: #d9d9d9; /* Color del borde cuando está cerrado */
+}
+
+/* Estilo para todos los botones del acordeón */
+.accordion-button {
+    border-width: 1px; /* Grosor del borde */
+    border-radius: 5px;
+    border-color: #dddddd; /* Color del borde */
+    border-style: solid; /* Estilo del borde (puede ser solid, dashed, dotted, etc.) */
+}
+
+#mail{
+    margin-left: 15px;
+    color: #C26D3B;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px; /* 116.667% */
 }
