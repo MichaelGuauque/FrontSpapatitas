@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpaPatitas | Configuracion</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="./img/Logo solo-02-02.png">
+    <link rel="stylesheet" href="./style/principal.css">
+</head>
+<body>
+    <div class="left-var">
+        <div class="contenedor-logo">
+            <img clas="logo"src="./img/Blanco Largo 1.png">
+        </div>
+        <div>
+            
+            <hr class="custom-line">
+        </div>
+        <div class="opciones">
+            <a class="menu-link" href="login.html"> <img class="icons-menu" src="./img/Home.png"> Inicio</a>
+            <a class="menu-link" href="#"> <img class="icons-menu" src="./img/Shopping bag.png"> Productos</a>
+            <a class="menu-link" href="#"> <img class="icons-menu" src="./img/Scissors.png"> Servicios</a>
+            <a class="menu-link" href="#"> <img class="icons-menu" src="./img/Calendar.png"> Citas</a>
+            <a class="menu-link" href="#"> <img class="icons-menu" src="./img/Tag.png"> Promociones</a>
+            <a class="menu-link" href="#"> <img class="icons-menu" src="./img/🦆 icon _pet_.png">  Mis Mascotas</a>
+        </div>
+        <div >
+            
+            <hr class="custom-line">
+        </div>
+        <div class="opciones">
+            <a class="menu-link" href="#"> <img class="icons-menu" src="./img/Archive.png"> PQRS</a>
+            <a class="menu-link" href="#"> <img class="icons-menu" src="./img/Clipboard.png"> Quienes Somos</a>
+            <a class="menu-link" href="#"> <img class="icons-menu" src="./img/Info.png"> Ayuda</a>
+        </div>
+        <div>
+            
+            <hr class="custom-line">
+        </div>
+        <div class="opciones">
+            <a class="menu-link" href="#"> <img class="icons-menu" src="./img/Settings.png"> Configuración</a>
+        </div>
+    </div>
+
+    <main>
+    <div class="right-content">
+        <div class="panel-informacion">
+            <h3>Configuración de Cuenta</h3>
+            <h2>Administra tu perfil y la seguridad de tu cuenta en Spa Patitas. Desde aquí puedes modificar tu información de usuario y cerrar tu sesión de manera segura.</h2>
+        </div>
+
+        <div class="crear-promo" style="background-color: #FFFAF9; border-radius: 10px;">
+            
+                <h3 id="titulosDiv">Información Personal</h3>
+            
+            <!-- Primera Fila: ID de Promoción, ID de Producto, ID de Servicio -->
+            <div class="container mt-4">
+                <form>
+                    <!-- Primera Fila: Nombres y Apellidos -->
+                    <div class="row mb-3">
+                        <div class="col-md-3">
+                            <label for="firstName" class="form-label">Primer Nombre</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="Ingresa tu primer nombre">
+                        </div>
+                        <div class="col-md-3">
+                            <label for="secondName" class="form-label">Segundo Nombre</label>
+                            <input type="text" class="form-control" id="secondName" placeholder="Ingresa tu segundo nombre">
+                        </div>
+                        <div class="col-md-3">
+                            <label for="firstSurname" class="form-label">Primer Apellido</label>
+                            <input type="text" class="form-control" id="firstSurname" placeholder="Ingresa tu primer apellido">
+                        </div>
+                        <div class="col-md-3">
+                            <label for="secondSurname" class="form-label">Segundo Apellido</label>
+                            <input type="text" class="form-control" id="secondSurname" placeholder="Ingresa tu segundo apellido">
+                        </div>
+                    </div>
+            
+                    <!-- Segunda Fila: Documento, Género y Fecha de Cumpleaños -->
+                    <div class="row mb-3">
+                        <div class="col-md-4">
+                            <label for="documentNumber" class="form-label">Número de Documento</label>
+                            <input type="number" class="form-control" id="documentNumber" placeholder="Ingresa tu documento">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="gender" class="form-label">Género</label>
+                            <select class="form-select" id="gender">
+                                <option selected>Selecciona tu género</option>
+                                <option value="male">Masculino</option>
+                                <option value="female">Femenino</option>
+                                <option value="other">Otro</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="birthdate" class="form-label">Fecha de Cumpleaños</label>
+                            <input type="date" class="form-control" id="birthdate">
+                        </div>
+                    </div>
+            
+                    <!-- Tercera Fila: Teléfono y Dirección -->
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="phone" class="form-label">Número de Teléfono</label>
+                            <input type="tel" class="form-control" id="phone" placeholder="Ingresa tu teléfono">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="address" class="form-label">Dirección</label>
+                            <input type="text" class="form-control" id="address" placeholder="Ingresa tu dirección">
+                        </div>
+                    </div>
+            
+                    <div class="row">
+                        <!-- Botones de Enviar y Cancelar -->
+                        <div id="botones" class="col-md-4 mb-3" style="display: flex;">
+                            <button type="submit" class="btn btn-primary w-50 me-2" style="background-color: #F2B243; border-style: none;">Guardar</button>
+                            <button type="button" class="btn btn-secondary w-50" onclick="window.location.href='/'">Cancelar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="right-content">
+        
+
+        <div class="crear-promo" style="background-color: #FFFAF9; border-radius: 10px; margin-top: 1.2%;">
+            
+                <h3 id="titulosDiv">Credenciales de Inicio</h3>
+            
+                <div class="container mt-4">
+                    <form>
+                        <!-- Primera Fila: Dirección de Correo (Solo Lectura) -->
+                        <div class="row mb-3">
+                            <div class="col-md-12">
+                                <label for="email" class="form-label">Correo Electrónico</label>
+                                <input type="email" class="form-control" id="email" value="tuemail@ejemplo.com" readonly>
+                            </div>
+                        </div>
+                
+                        <!-- Segunda Fila: Contraseña -->
+                        <div class="row mb-3">
+                            <div class="col-md-12">
+                                <label for="password" class="form-label">Contraseña</label>
+                                <input type="password" class="form-control" id="password" placeholder="Ingresa tu contraseña">
+                            </div>
+                        </div>
+                
+                        <!-- Tercera Fila: Repetir Contraseña -->
+                        <div class="row mb-3">
+                            <div class="col-md-12">
+                                <label for="confirmPassword" class="form-label">Repetir Contraseña</label>
+                                <input type="password" class="form-control" id="confirmPassword" placeholder="Repite tu contraseña">
+                            </div>
+                        </div>
+                
+                        <!-- Botones de Enviar y Cancelar -->
+                        <div id="botones" class="col-md-4 mb-3" style="display: flex;">
+                            <button type="submit" class="btn btn-primary w-50 me-2" style="background-color: #F2B243; border-style: none;">Guardar</button>
+                            <button type="button" class="btn btn-secondary w-50" onclick="window.location.href='/'">Cancelar</button>
+                        </div>
+                    </form>
+                </div>
+        </div>
+    </div>
+    
+
+    <div class="right-content">
+        
+
+        <div class="crear-promo" style="background-color: #FFFAF9; border-radius: 10px; margin-top: 1.2%;">
+            
+            <div class="container mt-4">
+                <!-- Texto de Cerrar Sesión -->
+                <h2 class="mb-3">Si deseas salir de tu cuenta, haz clic en el botón de "Cerrar Sesión" a continuación.</h2>
+            
+                <!-- Botón de Cerrar Sesión -->
+                <div class="text-center">
+                    <button type="button" class="btn btn-danger">Cerrar Sesión</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+<footer >
+    
+        <div class="div1"> <img class="imgLogo" src="./img/Blanco Cuadrado.png"> </div>
+
+        <div class="div2">    
+            <div class="contene">
+                <h5>Información de contacto</h5>
+                
+                  <p id="informa"><img class="iconosFooter" src="./img/Map pin.png">Calle Ejemplo 123, Ciudad, País</p>
+                  <p id="informa"><img class="iconosFooter" src="./img/Phone call.png">+123 456 7890</p>
+                  <p id="informa"><img class="iconosFooter" src="./img/Mail.png">info@spapatitas.com</p>
+                  <p id="informa"><img class="iconosFooter" src="./img/Clock.png">Horario: Lunes a Sábado, 9:00 AM - 6:00 PM</p>
+            </div>     
+        </div>
+
+        <div class="div4">
+
+            <div class="col-md-4">
+                <h5>Navegación</h5>
+                <div class="roww">
+                  <div class="columna1">
+                    <ul class="list-unstyled">
+                      <li class="naveg">Inicio</li>
+                      <li class="naveg">Productos</li>
+                      <li class="naveg">Servicios</li>
+                      <li class="naveg">Citas</li>
+                    </ul>
+                  </div>
+                  <div class="columna2">
+                    <ul class="list-unstyled">
+                      <li class="naveg">Sobre Nosotros</li>
+                      <li class="naveg">Términos y Condiciones</li>
+                      <li class="naveg">PQRS</li>
+                      <li class="naveg">Ayuda</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+        </div>
+
+        <div class="div5"> 
+            <section id="eslo">
+                <p id="eslogan">Nos apasiona el cuidado de tu mascota. Gracias por confiar en Spa Patitas.</p> 
+            </section>
+        </div>
+
+        <div class="div6">
+
+
+            <div class="contene">
+                <h5>Información de contacto</h5>
+                
+                  <p id="informa"><img class="iconosFooter" src="./img/Instagram.png">Instagram</p>
+                  <p id="informa"><img class="iconosFooter" src="./img/Facebook.png">Facebook</p>
+                  <p id="informa"><img class="iconosFooter" src="./img/🦆 icon _x letter_.png">X</p>
+                  <p id="informa"><img class="iconosFooter" src="./img/🦆 icon _tiktok_.png">TikTok</p>
+            </div>
+
+        </div>
+
+        <div class="div7"><p id="fote">&copy;2024 Spa Patitas. Todos los derechos reservados. El contenido y las imágenes son propiedad de Spa Patitas. Prohibida su reproducción sin autorización.</p></div>
+        
+
+    
+    <!-- -->
+</footer>
+
+</main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+
+</body>
+</html>

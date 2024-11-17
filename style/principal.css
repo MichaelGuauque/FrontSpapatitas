@@ -630,3 +630,109 @@ h5{
     font-weight: 500;
     line-height: 28px; /* 116.667% */
 }
+
+.card {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    align-items: center;
+    font-weight: bold;
+    color: #333;
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    line-height: normal;
+}
+
+.card-text {
+    color: #777;
+
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.btn-primary {
+    background-color: #F8BA4D;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #d7a041;
+}
+
+.textoTarjeta{
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+#carrito {
+    filter: brightness(0) invert(1);
+}
+
+#tarjetaPromo{
+    background-color: #AB7D50;
+    border-radius: 15px;
+}
+
+#tituloTarjetaPromo{
+    margin-top: 10px;
+    margin-left: 10px;
+    color: #FFFAF9;
+    text-align: center;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+/* Estilo para el botón circular transparente */
+.btn-circle-transparent {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 3px solid #ffffff;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    
+}
+
+.btn-circle-transparent:hover {
+    background-color: #87623d;
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+.btn-circle-transparent i {
+    font-size: 1.2rem;
+}
+
+/* Estilo para la imagen centrada */
+.centered-image {
+    width: 163px;
+    height: 249px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-left: 55px;
+    margin-top: 20px    ;
+}
